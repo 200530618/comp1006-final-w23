@@ -14,5 +14,9 @@ require 'include/header.php';
     </p>
     <p>Created my logo at <a href="LogoMakr.com" target="_blank">LogoMakr.com</a>.</p>
 </main>
+
+<footer>
+<div style="text-align:center;padding:1em 0;"> <h3><a style="text-decoration:none;" href="https://www.zeitverschiebung.net/en/city/5894171"><span style="color:gray;">Current local time in</span><br />Barrie, Canada</a></h3> <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=America%2FToronto" width="100%" height="115" frameborder="0" seamless></iframe> </div>
+</footer>
 </body>
 </html>
