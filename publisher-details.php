@@ -3,21 +3,12 @@ require('include/auth.php');
 $title = 'Publisher Details';
 require 'include/header.php'; ?>
 <main>
-    <form method="post" action="save-publisher.php">
-        <fieldset class="p-2">
-            <label for="name" class="col-2">Publisher: </label>
-            <input name="name" id="name" required maxlength="100"/>
-        </fieldset>
-        <button class="offset-2 btn btn-primary p-2">Save</button>
-    </form>
-</main>
-</body>
-</html>
+    
 <?php
     try {
         // get the travelId from the url parameter using $_GET
         $publisherId = $_GET['publisherId'];
-        if (empty($pubisherId)) {
+        if (empty($publisherId)) {
             header('location:404.php');
             exit();
         }
@@ -48,14 +39,14 @@ require 'include/header.php'; ?>
         exit();
     }
     ?>
-    <h1>Edit Publisher</h1>
-    <form action="save-publisher.php" method="post" enctype="multipart/form-data">
-        <fieldset>
-            <label for="name">Name:</label>
+    <form method="post" action="save-publisher.php">
+        <fieldset class="p-2">
+            <label for="name" class="col-2">Publisher: </label>
+            <input name="name" id="name" required maxlength="100" value="<?php echo $exampublisher['name']; ?>" />
         </fieldset>
-        
-        <button class="btnOffset">Save Publisher</button>
-        <input name="publisherId" id="publisherId" value="<?php echo $publisherId; ?>" type="hidden" />
+        <button class="offset-2 btn btn-primary p-2">Save</button>
     </form>
 </main>
-<?php require('shared/footer.php'); ?>
+</body>
+</html>
+    
