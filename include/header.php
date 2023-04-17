@@ -20,6 +20,9 @@
                 <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="games.php">Our Games</a>
                 </li>
+                <li>
+                    <a class="nav-link" aria-current="page" href="publishers.php">Publishers</a>
+                </li>
             </ul>
             <ul class="navbar-nav ms-auto">
                 <?php
