@@ -31,7 +31,7 @@ if ($ok == true) {
 
 
     echo 'Publisher Saved';
-    echo '<a href="publishers.php">Publishers</a>';
+    header('location:publishers.php');
 }
 
 ?>
